@@ -1,9 +1,28 @@
 import Vue from 'vue'
+import Vuex from 'vuex'
+
 import App from './App.vue'
 import router from './router'
 import store from './store'
-
+// 引入vant -ui
+import Vant from 'vant'
+import 'vant/lib/index.css'
+Vue.use(Vuex)
+Vue.use(Vant)
 Vue.config.productionTip = false
+// const store = new Vuex.Store({
+//   state:{
+//     count:100
+//   },
+//   mutations:{
+//     setCount(){
+//       state.count= 200
+//     }
+//   },
+//   actions(){
+
+//   }
+// })
 
 new Vue({
   router,
